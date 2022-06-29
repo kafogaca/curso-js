@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: blueviolet;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+            /* Converter String em Number
+                Number.parseInt(n) --> Converter para numeros inteiros <-- Exemplo: 2
+                Number.parseFloat(n) --> Converter para numeros reais (com virgula) <-- Exemplo: 5,5
+                Number(n) --> Nova ferramenta do JavaScript para conversão automatica. 
+            * /
+
+            /* Converter Number para String
+                String(n) --> Converte um numero para o formato de texto.
+                n.toString() --> Tambem converte um numero para o formato de texto.
+            */
+
+        /*var n1 = Number(window.prompt('Digite um numero'))
+        var n2 = Number(window.prompt('Digite outro numero'))
+        var s = n1 + n2
+        window.alert('A soma dos numeros é igual a ' + s)*/
+
+        var nome = window.prompt('Olá, qual é o seu nome?')
+        var ano = window.prompt('É um prazer te conhecer, ' + nome + '! ' + 'Em qual ano você nasceu ?')
+        var x = Number(2022)
+        var a = Number(ano)
+        var idade = x-a
+        window.alert('Hmm, então quer dizer que você tem ' + idade + ' anos !')
+    </script>
+</body>
+</html>  
