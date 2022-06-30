@@ -19,15 +19,59 @@
 
             Atribuição
             Relacionais
+                ex: 5 > 2 = true
+                    7 < 4 = false
+                    8 >= 8 = true
+                    9 <= 7 = false
+                    5 == 5 = true < No JS o sinal de igual é duplo >
+                    4 != 4 = false < != no JS é o sinal de diferente >
             Lógicos
+                    ! = Negação < Não >
+                    && = Conjunção < E >
+                    || = Disjunção < OU >
+
+                CONDICIONAL OPERADORES LÓGICOS
+                < ! > Negação é um operador unário (tem somente um operando) -> depois da ! ou é TRUE ou FALSE
+                -> Uma coisa que NÃO é TRUE é ---> false
+                -> Uma coisa que NÃO é FALSE é ---> true
+
+                < && > Conjunção é um operador binário (tem dois valores lógicos)
+                -> true && true = true
+                -> true && false = false
+                -> false && true = false
+                -> false && false = false
+
+                < || >  Disjunção é um operador binário (tem dois valores lógicos)
+                -> true || true = true
+                -> true || false = true
+                -> false || true = true
+                -> false || false = false
+
+                ORDEM DE EXECUÇÃO DOS OPERADORES LÓGICOS
+                    1º Negação (!)
+                    2º Conjunção (&&)
+                    3º Disjunção (||)
+                
             Ternário
+                    ?
+                    :
+
         */
 
         /* ORDEM DE PRECEDÊNCIA DOS OPERADORES
+            Aritméticos
             1º ()
             2º **
             3º * / %
             4º + - 
+            
+            Relacionais
+            5º <os operadores Relacionais nao possuem uma ordem, a leitura é feita da esquerda para a direita>
+            
+            Lógicos
+            6º !
+            7º &&
+            8º ||
         */
     </script>
 </body>
