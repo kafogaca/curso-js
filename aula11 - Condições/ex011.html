@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../aula09 - DOM/icons8-javascript-16.png" type="image/x-icon">
+    <title>Policia Federal</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+
+    <p>
+        Em qual País você nasceu ? <br>
+        <input type="text" name="txtp" id="txtp"> <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res">
+
+        </div>
+    </p>
+    <script>
+        function calcular() {
+            var txtv = document.getElementById('txtp').value
+            var res = document.getElementById('res')
+            res.innerHTML = `O seu país de origem é <strong>${txtv}</strong><br>`
+            if (txtv == 'Brasil') {
+                res.innerHTML += `Então você é <strong>Brasileiro</strong>`
+                res.innerHTML += String.fromCodePoint(0x1F929)
+            } else {
+                res.innerHTML += `Então você é <strong>Estrangeiro</strong>`
+                res.innerHTML += String.fromCodePoint(0x1F612)
+            }
+        }
+    </script>
+
+</body>
+</html>
