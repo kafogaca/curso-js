@@ -16,7 +16,37 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    text-align: center;
 
+}
+
+div {
+    padding: 8px;
+}
+
+#msg {
+    background-color: whitesmoke;
+    padding: 12px;
+    font-size: 1.7em;
+    border-radius: 15px;
+    width: 150px;
+    margin: auto;
+    border: 3px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#msg:hover{
+    background-color: rgba(117, 116, 116, 0.281);
+    color: black;
+    transition: 0.6s;
+}
+
+#frase {
+    font-family: monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(201, 201, 201);
+    text-shadow: 2px 2px 2px black;
 }
 
 footer {
