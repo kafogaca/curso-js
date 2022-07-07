@@ -2,10 +2,12 @@ function carregar() {
     var msg = document.getElementById('msg')
     var img = document.getElementById('imagem')
     var data = new Date()
-    var hora = data.toLocaleTimeString() /* Tras a hora completa do sistema para uma string */
+    var hora = String(data.getHours()).padStart(2,0)
+    var minuto = String(data.getMinutes()).padStart(2,0)
+    var segundos = String(data.getSeconds()).padStart(2,0)
     window.setInterval('carregar()', 1000) /* Faz a pagina carregar sem precisar ficar atualizando */
 
-    msg.innerHTML = `${hora}`
+    msg.innerHTML = `${hora}:${minuto}:${segundos}`
 
     if (hora >= 0 && hora < 12) {
         img.src = '../imagens/manha.png'
