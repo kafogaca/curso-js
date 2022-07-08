@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagens/icons8-javascript-16.png" type="image/x-icon">
-    <title>Hora do dia</title>
+    <title>Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div id="msg">
-            Horario
+        <div>
+            <p>Ano de Nascimento:
+                <input type="Number" name="txtano" id="ano">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="../imagens/manha.png" alt="">
-        </div>
-        <div id="frase">
-
+        <div>
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
